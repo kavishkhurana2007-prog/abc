@@ -17,7 +17,7 @@ export const CONFIG = {
   memories: [
     { src: "assets/photos/memory-01.jpg", alt: "A cherished memory together", caption: "Some places become special simply because you were there." },
     { src: "assets/photos/memory-02.jpg", alt: "A happy moment together", caption: "Proof that the best moments never need a perfect plan." },
-    { src: "assets/photos/memory-03.jpg", alt: "A favourite group photo", caption: "A frame full of people, and somehow my eyes still found you first." },
+    { src: "assets/photos/memory-03.jpg", alt: "A favourite group photo", caption: "full group present still pehla tere nain me dekhe fir dekheya tenu ni" },
   ],
   letter: `I wanted to give you something you could come back to — a small reminder of how much you mean to me.\n\nYou make ordinary moments feel softer, louder, brighter, and more worth remembering. Thank you for every laugh, every conversation, and every little piece of joy you bring into my life.\n\nToday, I hope you feel as loved as you deserve to feel.`,
   proposal: {
@@ -27,7 +27,7 @@ export const CONFIG = {
   },
   finale: {
     message: "Thank you for making me the happiest person alive.",
-    signature:"Finally this Punjabi Munda found her Gujarati Kudi,With all my heart, {yourName}",
+    signature:"Finally this Punjabi Munda found her Gujarati Kudi,\nWith all my heart, {yourName}",
   },
   music: "assets/music/background.mp3",
 };
