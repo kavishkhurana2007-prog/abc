@@ -27,8 +27,7 @@ export const CONFIG = {
   },
   finale: {
     message: "Thank you for making me the happiest person alive.",
-    signature:"Finally this Punjabi Munda found her Gujarati Kudi",
-    signature: "With all my heart, {yourName}",
+    signature:"Finally this Punjabi Munda found her Gujarati Kudi,With all my heart, {yourName}",
   },
   music: "assets/music/background.mp3",
 };
