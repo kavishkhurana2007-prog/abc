@@ -64,4 +64,8 @@ function revealFinale(particles, fireworks) {
   let count = 0; const celebration = () => { fireworks.launch(innerWidth * (.2 + Math.random() * .6), innerHeight * (.2 + Math.random() * .4)); particles.spawn("heart", 22, { x: innerWidth * (.25 + Math.random() * .5), y: innerHeight * .55 }); count += 1; if (count < 6) setTimeout(celebration, 530); }; celebration();
 }
 
-init();
+init().catch((error) => {
+  // The story should remain reachable even if an optional remote animation asset fails.
+  console.error("Surprise site initialization failed:", error);
+  document.body.classList.add("is-loading-failed");
+});
