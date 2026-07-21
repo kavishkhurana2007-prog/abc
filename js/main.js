@@ -28,7 +28,12 @@ function setupContent() {
 }
 
 function setupScroll() {
-  if (window.Lenis && !prefersReducedMotion) { const lenis = new Lenis({ lerp: .09, smoothWheel: true }); const raf = (time) => { lenis.raf(time); requestAnimationFrame(raf); }; requestAnimationFrame(raf); }
+  if (window.Lenis && !prefersReducedMotion) {
+    const lenis = new window.Lenis({ lerp: .075, smoothWheel: true, wheelMultiplier: .82 });
+    if (window.ScrollTrigger) lenis.on("scroll", window.ScrollTrigger.update);
+    const raf = (time) => { lenis.raf(time); requestAnimationFrame(raf); };
+    requestAnimationFrame(raf);
+  }
   if (window.gsap && window.ScrollTrigger) {
     window.gsap.utils.toArray(".story-section, .scene--sky, .scene--proposal").forEach((scene) => window.ScrollTrigger.create({ trigger: scene, start: "top 55%", onEnter: () => emit("scene:entered", { scene: scene.dataset.scene }) }));
   }
